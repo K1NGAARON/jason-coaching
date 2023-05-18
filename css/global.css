@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap');
 
 :root {
-    --primary: #1e2f54;
-    --secondary: #d31a22;
+    --primary: #90EE8F;
     --white: #fff;
     --light-grey: #f5f5f5;
-    --black: #363536;
+    --black: #1C1C1C;
     --boxShadow: 0px 3px 6px #00000029;
     --borderRadius: 26px;
     --overlay: var(--black);
@@ -196,7 +195,6 @@ img.bg-color {
     padding: 30px;
     border-radius: 3px;
     background-color: var(--white);
-    box-shadow: var(--boxShadow);
 }
 
 .form-wrapper form {

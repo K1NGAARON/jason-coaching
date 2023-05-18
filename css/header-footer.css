@@ -114,8 +114,60 @@
 .footer .row {
     min-height: unset;
     justify-content: space-between;
+    align-items: center;
     margin: 30px auto;
+    padding: 0 30px;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.socials img {
+    max-width: 30px;
+    transition: var(--transition);
+}
+
+.socials img:hover {
+    transform: scale(1.10);
+    transition: var(--transition);
+}
+
+.made-by {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.made-by p,
+.made-by a {
+    color: var(--white);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.made-by a:hover {
+    opacity: 1;
+    transition: var(--transition);
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 560px) {
     .header .row {
