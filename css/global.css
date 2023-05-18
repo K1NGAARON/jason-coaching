@@ -193,6 +193,7 @@ img.bg-color {
     display: flex;
     width: 80%;
     padding: 30px;
+    margin: 0 auto;
     border-radius: 3px;
     background-color: var(--white);
 }
