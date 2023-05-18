@@ -56,6 +56,11 @@ p {
     font-size: 16px;
 }
 
+.divider {
+    width: 15%;
+    border: 3px solid var(--primary);
+}
+
 img {
     width: 100%;
     height: auto;
@@ -76,6 +81,7 @@ img.bg-color {
 }
 
 .section.black {
+    color: var(--white);
     background-color: var(--black);
 }
 
@@ -181,10 +187,6 @@ img.bg-color {
     z-index: 3;
 }
 
-.section.contact h2 {
-    max-width: 45%;
-}
-
 .section.contact .row.flex-col {
     align-items: flex-start;
 }
@@ -284,10 +286,6 @@ img.bg-color {
 }
 
 @media (max-width: 1000px) {
-    .section.contact h2 {
-        max-width: 100%;
-    }
-
     .form-wrapper {
         width: 100%;
     }

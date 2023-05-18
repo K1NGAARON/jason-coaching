@@ -15,7 +15,11 @@
 
 .banner h1,
 .banner p {
-    width: 60%;
+    text-align: center;
+}
+
+.banner.section .row.flex-col.center {
+    gap: 0;
 }
 
 .banner .overlay {
@@ -25,6 +29,10 @@
 .banner .btn:not(.ghost) {
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
+}
+
+.intro.section p {
+    text-align: center;
 }
 
 .services .wrapper .item {
@@ -76,6 +84,12 @@
 
 .services .wrapper .item .btn {
     margin-top: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 @media (max-width: 560px) {
