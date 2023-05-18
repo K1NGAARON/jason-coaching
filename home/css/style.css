@@ -1,0 +1,90 @@
+.banner {
+    justify-content: center;
+    height: 80vh;
+    background-image: url('/home/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .row {
+    color: var(--white);
+    z-index: 10;
+}
+
+.banner h1,
+.banner p {
+    width: 60%;
+}
+
+.banner .overlay {
+    opacity: 0.8;
+}
+
+.banner .btn:not(.ghost) {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.services .wrapper .item {
+    padding: 30px;
+    border-radius: var(--borderRadius);
+    background-color: var(--white);
+    box-shadow: var(--boxShadow);
+}
+
+.services .wrapper .item img {
+    border-radius: var(--borderRadius);
+}
+
+.services .wrapper .item h5 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.services .wrapper .item a {
+    color: var(--secondary);
+}
+
+.services .wrapper .item .nav {
+    width: fit-content;
+    margin-top: auto;
+}
+
+.services .wrapper .item .nav::before {
+    background-color: var(--secondary);
+}
+
+.services .wrapper .item {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+}
+
+.services .wrapper .item i {
+    font-size: 50px;
+}
+
+.services .wrapper .item h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.services .wrapper .item .btn {
+    margin-top: auto;
+}
+
+@media (max-width: 560px) {
+    .banner {
+        height: fit-content;
+    }
+
+    .banner h1,
+    .banner p {
+        width: 100%;
+    }
+}
