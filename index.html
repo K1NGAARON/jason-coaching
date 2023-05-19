@@ -68,7 +68,7 @@
                 <a class="nav" href="#clients">
                     Klanten
                 </a>
-                <a class="btn ghost white" href="#contact">
+                <a class="nav" href="#contact">
                     Contact
                 </a>
             </div>
@@ -164,8 +164,12 @@
 <div class="section clients" id="clients">
     <div class="row">
         <div class="col">
-            <div class="image-slider">
-                <img src="/home/img/before-after.jpg" alt="">
+            <div class="slider-container">
+                <div class="image before"></div>
+                <div class="image after"></div>
+                
+                <input type="range" class="slider" min="1" max="100" value="50" />
+                <div class="slider-button"></div>
             </div>
         </div>
         <div class="col">
@@ -246,5 +250,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="/js/app.js"></script>
+    <script src="/home/js/script.js"></script>
 </body>
 </html>

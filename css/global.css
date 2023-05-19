@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     --primary: #90EE8F;
@@ -18,7 +18,7 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -131,6 +131,7 @@ img.bg-color {
     font-weight: 600;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
     color: var(--white);
     background-color: var(--primary);
     border: 1px solid var(--primary);

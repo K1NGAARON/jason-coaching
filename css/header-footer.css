@@ -56,9 +56,10 @@
 
 .header .container .nav {
     color: var(--white);
-    opacity: 1;
     font-weight: 600;
     text-decoration: none;
+    text-transform: uppercase;
+    opacity: 1;
     transition: var(--transition);
 }
 
@@ -165,14 +166,6 @@
     transition: var(--transition);
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 560px) {
     .header .row {
         display: none;
@@ -194,7 +187,7 @@
 
 
     .header .topnav-content-sm svg {
-        fill: var(--secondary);
+        fill: var(--primary);
         width: 25px;
     }
 
