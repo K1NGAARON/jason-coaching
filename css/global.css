@@ -267,6 +267,75 @@ img.bg-color {
     font-size: 20px;
 }
 
+.cookie-banner-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    right: 50px;
+    bottom: 50px;
+    height: auto;
+    width: 400px;
+    background-color: var(--white);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
+    z-index: 99;
+    border-radius: var(--borderRadius);
+}
+
+.cookie-banner-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cookie-banner-content h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cookie-banner-wrapper a {
+    color: var(--primary);
+    margin-top: 20px;
+}
+
+.cookie-banner-wrapper a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cookie-banner-wrapper .cookies-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.hide-cookie-banner {
+    display: none!important;
+}
+
+@media all and (max-width: 540px) {
+    .cookie-banner-wrapper {
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+    }
+}
+
 
 @media (max-width: 560px) {
     .section .row .col {
