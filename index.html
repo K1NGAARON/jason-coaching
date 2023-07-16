@@ -49,6 +49,9 @@
                 <a class="nav" href="/">
                     Home
                 </a>
+                <a class="nav" href="#about">
+                    Over mij
+                </a>
                 <a class="nav" href="#programs">
                     Programma's
                 </a>
@@ -56,7 +59,7 @@
                     Klanten
                 </a>
                 <a class="btn ghost white" href="#contact">
-                    Contact
+                    Gratis intake
                 </a>
             </div>
         </div>
@@ -75,6 +78,9 @@
         </div>
         <div class="small-menu-wrapper">
             <div class="small-menu-content">
+                <a class="nav" href="#about">
+                    Over mij
+                </a>
                 <a class="nav" href="#programs">
                     Programma's
                 </a>
@@ -82,7 +88,7 @@
                     Klanten
                 </a>
                 <a class="nav" href="#contact">
-                    Contact
+                    Gratis intake
                 </a>
             </div>
         </div>
@@ -165,7 +171,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae atque ab quidem dolor reiciendis fugiat aut rem, veritatis odit delectus, similique illo. Fuga, corporis?
             </p>
             <a href="#contact" class="btn">
-                Contact
+                Gratis intake
             </a>
         </div>
         <div class="col">
@@ -174,17 +180,28 @@
     </div>
 </div>
 
-<div class="section clients" id="clients">
+<div class="section">
     <div class="row">
         <div class="col">
-            <div class="slider-container">
-                <div class="image before"></div>
-                <div class="image after"></div>
-                
-                <input type="range" class="slider" min="1" max="100" value="50" />
-                <div class="slider-button"></div>
-            </div>
+            <img src="/home/img/card1.jpg" alt="">
         </div>
+        <div class="col">
+            <hr class="divider green">
+            <h2>
+                Mijn visie
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae atque ab quidem dolor reiciendis fugiat aut rem, veritatis odit delectus, similique illo. Fuga, corporis?
+            </p>
+            <a href="#contact" class="btn">
+                Gratis intake
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="section clients" id="clients">
+    <div class="row">
         <div class="col">
             <hr class="divider green">
             <h2>
@@ -194,6 +211,15 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ratione. Ullam quia, cum obcaecati delectus odio porro velit non dignissimos alias, et ipsam. Voluptatum, hic.
             </p>
         </div>
+        <div class="col">
+                        <div class="slider-container">
+                <div class="image before"></div>
+                <div class="image after"></div>
+                
+                <input type="range" class="slider" min="1" max="100" value="50" />
+                <div class="slider-button"></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -202,26 +228,27 @@
         <div class="col">
             <hr class="divider green">
             <h2>
-                Contacteer mij
+                Contacteer mij voor een gratis intake
             </h2>
             <div class="contact-info">
-                <a href="">
-                    <i class="fa-solid fa-phone"></i>
-                    0474 06 32 40
-                </a>
-                <a href="">
+                <p>
+                    Raversijdestraat 27, 0502
+                    <br>
+                    8400 Oostende
+                </p>
+                <a href="mailto:jason_goddyn@hotmail.com">
                     <i class="fa-solid fa-envelope"></i>
-                    info@jgcoaching.be
+                    jason_goddyn@hotmail.com
                 </a>
             </div>
         </div>
         <div class="col">
             <div class="form-wrapper">
                 <form action="https://formspree.io/f/xbjebegd" method="post" class="validate contact-form" target="_blank" novalidate>
-                    <input type="text" value="" name="FNAME" placeholder="Jouw naam*" required>
-                    <input type="email" value="" name="EMAIL" placeholder="Emailadres*" required>
-                    <input type="text" value="" name="PHONE" placeholder="GSM nummer*" required>
-                    <input type="text" value="" name="MESSAGE"placeholder="Jouw bericht">
+                    <input type="text" value="" name="first-name" placeholder="Jouw naam*" required>
+                    <input type="email" value="" name="email" placeholder="Emailadres*" required>
+                    <input type="text" value="" name="phone" placeholder="GSM nummer*" required>
+                    <input type="text" value="" name="message"placeholder="Jouw bericht">
                     <input type="submit" value="Verstuur ➔" name="subscribe" class="btn">
                 </form>
             </div>
@@ -235,13 +262,11 @@
             <img class="logo" src="/assets/logo/logo.png" alt="Logo">
             <div class="footer-container">
                 <p class="legal">
-                    Jason Goddyn Coaching
+                    Raversijdestraat 27, 0502
                     <br>
-                    Straat + huisnummer
+                    8400 Oostende
                     <br>
-                    Stad + Postcode
-                    <br>
-                    <a class="mail" href="">info@jgcoaching.be</a>
+                    <a class="mail" href="mailto:jason_goddyn@hotmail.com">jason_goddyn@hotmail.com</a>
                 </p>
                 <div class="socials">
                     <a href="" target="_blank">
@@ -261,7 +286,6 @@
     </div>
 </footer>
 
-<!-- COOKIE BANNER -->
 <div class="cookie-banner-wrapper">
     <div class="cookie-banner-content">
         <h4>
@@ -281,7 +305,6 @@
     </div>
 </div>
 
-<!-- COOKIE OVERLAY -->
 <div id="overlay"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
