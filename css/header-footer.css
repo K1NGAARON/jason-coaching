@@ -9,7 +9,7 @@
 .header.active {
     position: fixed;
     top: 0;
-    background-color: var(--white);
+    background-color: var(--black);
     transition: background-color 200ms linear;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .header.active .container .nav {
-    color: var(--black);
+    color: var(--white);
 }
 
 .header.active .btn {
@@ -39,7 +39,7 @@
 
 .header .logo,
 .footer .logo {
-    width: 150px;
+    width: 100px;
 }
 
 .header .nav-logo {
@@ -99,6 +99,10 @@
 }
 
 .header .nav::before {
+    background-color: var(--white);
+}
+
+.header.active .nav::before {
     background-color: var(--white);
 }
 

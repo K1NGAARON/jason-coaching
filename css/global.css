@@ -71,6 +71,15 @@ img.bg-color {
     box-shadow: 8px 8px 0px 2px var(--primary);
 }
 
+p.width-50 {
+    width: 50%;
+    font-size: 20px;
+}
+
+.width-50 .bold {
+    font-weight: 700;
+}
+
 .hidden {
     display: none;
 }
@@ -325,6 +334,22 @@ img.bg-color {
 
 .hide-cookie-banner {
     display: none!important;
+}
+
+.slideUp {
+    animation: slide-up 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @media all and (max-width: 540px) {
