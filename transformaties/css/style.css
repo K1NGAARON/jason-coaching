@@ -1,0 +1,41 @@
+.banner {
+    justify-content: center;
+    height: 60vh;
+    background-image: url('/home/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .row {
+    color: var(--white);
+    z-index: 10;
+}
+
+.banner h1,
+.banner p {
+    text-align: center;
+}
+
+.banner .overlay {
+    opacity: 0.8;
+}
+
+.section .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.section .wrapper .item {
+    flex: 1 0 20%;
+}
+
+.section .wrapper .item img {
+    max-width: 150px;
+}
+
+.section .program-wrapper .item img {
+    max-width: none;
+}
