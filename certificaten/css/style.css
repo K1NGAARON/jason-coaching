@@ -1,0 +1,18 @@
+.banner.section {
+    height: 60vh;
+}
+
+.section .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.section .wrapper .item {
+    flex: 1 0 20%;
+}
+
+.section .wrapper .item img {
+    max-width: 150px;
+}
+

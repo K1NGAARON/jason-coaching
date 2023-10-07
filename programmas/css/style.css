@@ -1,0 +1,41 @@
+.banner {
+    justify-content: center;
+    height: 70vh;
+    background-image: url('/home/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .row {
+    color: var(--white);
+    z-index: 10;
+}
+
+.banner h1,
+.banner p {
+    text-align: center;
+}
+
+.banner.section .row.flex-col.center {
+    gap: 0;
+}
+
+.banner .overlay {
+    opacity: 0.8;
+}
+
+.section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section li {
+    font-size: 20px;
+}
+
+.section li::marker {
+    color: var(--primary);
+}
