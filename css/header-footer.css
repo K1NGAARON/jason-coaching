@@ -14,7 +14,7 @@
 }
 
 .header.active .topnav-content-sm svg {
-    fill: var(--black);
+    fill: var(--white);
 }
 
 .header.active .container .nav {

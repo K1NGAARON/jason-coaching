@@ -243,9 +243,13 @@
 }
 
 @media (max-width: 560px) {
-    .banner {
-        height: fit-content;
-    }
+	.banner {
+		height: 50vh;
+	}
+
+	p.width-50 {
+		width: 100%;
+	}
 
     .banner h1,
     .banner p {
@@ -259,14 +263,20 @@
 	}
 
 	.program-wrapper .item {
-		flex: 1 0 40%;
+		flex: 1 0 100%;
 	}
 
 	.program-wrapper .item .content h5 {
 		font-size: 20px;
+		text-align: center;
 	}
 
 	.program-wrapper .item .content a {
 		font-size: 14px;
+		text-align: center;
+	}
+
+	.contact h2 {
+		text-align: center;
 	}
 }

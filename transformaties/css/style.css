@@ -39,3 +39,9 @@
 .section .program-wrapper .item img {
     max-width: none;
 }
+
+@media (max-width: 560px) {
+    .section .wrapper .item {
+        flex: 1 0 100%;
+    }
+}
