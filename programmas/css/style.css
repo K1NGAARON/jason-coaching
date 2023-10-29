@@ -1,9 +1,9 @@
 .banner {
     justify-content: center;
-    height: 70vh;
+    height: 80vh;
     background-image: url('/home/img/banner.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     position: relative;
 }
