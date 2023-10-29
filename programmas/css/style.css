@@ -39,3 +39,26 @@
 .section li::marker {
     color: var(--primary);
 }
+
+.section.service .row img {
+    max-width: 300px;
+}
+
+.section.service .row .col.large {
+    flex: 2 0;
+}
+
+.section.service .row .col.small {
+    flex: 1 0;
+}
+
+@media (max-width: 560px) {
+    .section.service .row .col.large,
+    .section.service .row .col.small {
+        flex: 1 0 100%;
+    }
+
+    .section .reverse-sm {
+        flex-flow: wrap-reverse;
+    }
+}
