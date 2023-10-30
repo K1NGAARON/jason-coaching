@@ -105,6 +105,29 @@
     transition: var(--transition);
 }
 
+.program-wrapper .item.black {
+	justify-content: center;
+}
+
+.program-wrapper .item.black .overlay {
+	background: var(--black);
+	opacity: 1;
+	display: block;
+}
+
+.program-wrapper .item.black .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.program-wrapper .item.black img {
+	width: 150px;
+	margin: 0 auto;
+	z-index: 20;
+}
+
 .program-wrapper .item .content {
     display: none;
     position: absolute;
@@ -121,7 +144,7 @@
 }
 
 .program-wrapper .item .content h5 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 
