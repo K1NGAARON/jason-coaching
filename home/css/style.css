@@ -302,4 +302,8 @@
 	.contact h2 {
 		text-align: center;
 	}
+
+	.program-wrapper .item.black img {
+		opacity: 0.2;
+	}
 }
