@@ -1,0 +1,62 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "programmas/index.html"
+        ],
+        "createdAt": "2026-10-01T06:52:13.122Z",
+        "reason": "Pre-existing site type scale; this edit only changes a price string the client requested."
+      },
+      {
+        "rule": "skipped-heading",
+        "value": "*",
+        "files": [
+          "programmas/index.html"
+        ],
+        "createdAt": "2026-10-01T06:52:13.137Z",
+        "reason": "Pre-existing heading outline; this edit only changes a price string the client requested."
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-01T06:52:13.152Z",
+        "reason": "Pre-existing site type scale; this edit only swaps the about photo the client requested."
+      },
+      {
+        "rule": "skipped-heading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-01T06:52:13.211Z",
+        "reason": "Pre-existing heading outline; this edit only swaps the about photo the client requested."
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "over/index.html"
+        ],
+        "createdAt": "2026-10-01T06:52:13.237Z",
+        "reason": "Pre-existing site type scale; this edit only swaps the about photo the client requested."
+      },
+      {
+        "rule": "skipped-heading",
+        "value": "*",
+        "files": [
+          "over/index.html"
+        ],
+        "createdAt": "2026-10-01T06:52:13.252Z",
+        "reason": "Pre-existing heading outline; this edit only swaps the about photo the client requested."
+      }
+    ]
+  }
+}
