@@ -44,6 +44,123 @@
 	z-index: 10;
 }
 
+/* Eerder/nu-vergelijker: --p (0-100) bepaalt waar de scheiding ligt */
+.compare {
+    --pos: calc(var(--p) * 1%);
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 3 / 4;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #000;
+    user-select: none;
+    touch-action: pan-y;
+    cursor: ew-resize;
+}
+
+/* donkere rand bovenaan: verbergt de spiegel en geeft de labels contrast */
+.compare::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 22%;
+    background: linear-gradient(to bottom, var(--black) 0%, rgba(28, 28, 28, 0.6) 45%, rgba(28, 28, 28, 0) 100%);
+    pointer-events: none;
+}
+
+.compare-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.compare-before {
+    clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+
+.compare-label {
+    position: absolute;
+    top: 18px;
+    z-index: 2;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: rgba(28, 28, 28, 0.55);
+    transition: opacity .2s ease;
+}
+
+.compare-label-before {
+    left: 18px;
+    opacity: clamp(0, (var(--p) - 24) / 8, 1);
+}
+
+.compare-label-after {
+    right: 18px;
+    color: var(--black);
+    background-color: var(--primary);
+    opacity: clamp(0, (76 - var(--p)) / 8, 1);
+}
+
+.compare-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--pos);
+    z-index: 3;
+    width: 2px;
+    margin-left: -1px;
+    background-color: var(--white);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+}
+
+.compare-knob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    color: var(--black);
+    background-color: var(--primary);
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    transform: translate(-50%, -50%);
+    transition: transform .2s ease;
+}
+
+.compare.is-dragging .compare-knob {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* de range is er voor toetsenbord en schermlezer; slepen loopt via pointer-events */
+.compare-range {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.compare-range:focus-visible + .compare-handle .compare-knob {
+    outline: 3px solid var(--white);
+    outline-offset: 4px;
+}
+
 .program-wrapper {
     margin-top: 20px;
 }
@@ -309,5 +426,9 @@
 
 	.program-wrapper .item.black .content {
 		z-index: 99;
+	}
+
+	.compare {
+		max-width: 100%;
 	}
 }
